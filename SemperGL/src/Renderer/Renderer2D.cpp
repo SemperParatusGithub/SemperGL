@@ -119,6 +119,22 @@ namespace SemperGL
 		stats.drawCalls += 1;
 	}
 
+	void Renderer2D::DrawImpl(const Rect &rect)
+	{
+		glm::vec3 position = { rect.GetPosition().x, rect.GetPosition().y, 0.0f };
+		glm::vec2 size = { rect.GetSize().x, rect.GetSize().y };
+		glm::vec4 color { rect.GetColor().x, rect.GetColor().y, rect.GetColor().z, rect.GetColor().w };
+		
+		if (rect.hasTexture())
+			GetInstance()->DrawRotatedQuadImpl(position, size, rect.GetTexture(), rect.GetRotation());
+		else
+			GetInstance()->DrawRotatedQuadImpl(position, size, color, rect.GetRotation());
+	}
+
+	void Renderer2D::DrawImpl(const Triangle &triangle)
+	{
+	}
+
 	void Renderer2D::DrawQuadImpl(const glm::vec3 &position, const glm::vec2 &size, const glm::vec4 &color)
 	{
 		if (QuadIndexCount >= MaxIndexCount)
@@ -354,19 +370,6 @@ namespace SemperGL
 		GetInstance()->BeginSceneImpl();
 	}
 
-	// void Renderer2D::Draw(const Rect &rect)
-	// {
-	// 	glm::vec2 position = { rect.GetPosition().x, rect.GetPosition().y };
-	// 	glm::vec2 size = { rect.GetSize().x, rect.GetSize().y };
-	// 	glm::vec4 color { rect.GetColor().x, rect.GetColor().y, rect.GetColor().z, rect.GetColor().w };
-	// 
-	// 	if (rect.hasTexture())
-	// 		DrawRotatedQuad(position, size, rect.GetTexture(), rect.GetRotation());
-	// 	else
-	// 		DrawRotatedQuad(position, size, color, rect.GetRotation());
-	// 
-	// }
-
 	void Renderer2D::Init()
 	{
 		GetInstance()->InitImpl();
@@ -387,6 +390,15 @@ namespace SemperGL
 	void Renderer2D::Flush()
 	{
 		GetInstance()->FlushImpl();
+	}
+
+	void Renderer2D::Draw(const Rect &rect)
+	{
+		GetInstance()->DrawImpl(rect);
+	}
+	void Renderer2D::Draw(const Triangle &triangle)
+	{
+		GetInstance()->DrawImpl(triangle);
 	}
 
 	void Renderer2D::DrawQuad(const glm::vec3 &position, const glm::vec2 &size, const glm::vec4 &color)

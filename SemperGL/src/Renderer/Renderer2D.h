@@ -56,6 +56,9 @@ namespace SemperGL
 		static void EndScene();
 		static void Flush();
 
+		static void Draw(const Rect &rect);
+		static void Draw(const Triangle &triangle);
+
 		static void DrawQuad(const glm::vec3 &position, const glm::vec2 &size, const glm::vec4 &color);
 		static void DrawQuad(const glm::vec3 &position, const glm::vec2 &size, const Texture &texture, const glm::vec4 &tintColor = { 1.0f, 1.0f, 1.0f, 1.0f });
 
@@ -78,6 +81,9 @@ namespace SemperGL
 		void BeginSceneImpl();
 		void EndSceneImpl();
 		void FlushImpl();
+
+		void DrawImpl(const Rect &rect);
+		void DrawImpl(const Triangle &triangle);
 
 		void DrawQuadImpl(const glm::vec3 &position, const glm::vec2 &size, const glm::vec4 &color);
 		void DrawQuadImpl(const glm::vec3 &position, const glm::vec2 &size, const Texture &texture, const glm::vec4 &tintColor = { 1.0f, 1.0f, 1.0f, 1.0f });
