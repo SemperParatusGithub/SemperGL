@@ -1,0 +1,4 @@
+﻿  Main.cpp
+C:\Users\nilss\Desktop\SemperGL\Projects\Particles\src\Main.cpp(57,72): warning C4244: "Argument": Konvertierung von "int" in "float", möglicher Datenverlust
+C:\Users\nilss\Desktop\SemperGL\Projects\Particles\src\Main.cpp(57,52): warning C4244: "Argument": Konvertierung von "int" in "float", möglicher Datenverlust
+  Particles.vcxproj -> C:\Users\nilss\Desktop\SemperGL\Projects\Particles\..\..\bin\Debug-windows-x86_64\Particles\Particles.exe

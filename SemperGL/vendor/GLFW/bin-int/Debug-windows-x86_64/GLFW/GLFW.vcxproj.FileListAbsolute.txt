@@ -1,0 +1,2 @@
+C:\Users\nilss\Desktop\SemperGL\SemperGL\vendor\GLFW\bin\Debug-windows-x86_64\GLFW\GLFW.pdb
+C:\Users\nilss\Desktop\SemperGL\SemperGL\vendor\GLFW\bin-int\Debug-windows-x86_64\GLFW\GLFW.pdb

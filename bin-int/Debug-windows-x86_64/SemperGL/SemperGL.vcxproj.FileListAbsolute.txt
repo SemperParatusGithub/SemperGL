@@ -1,0 +1,2 @@
+C:\Users\nilss\Desktop\SemperGL\bin\Debug-windows-x86_64\SemperGL\SemperGL.pdb
+C:\Users\nilss\Desktop\SemperGL\bin-int\Debug-windows-x86_64\SemperGL\SemperGL.pdb
