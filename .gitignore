@@ -3,4 +3,5 @@
 ".user
 bin
 bin-int
+SemperGL.sln
 !/vendor/bin/premake/*
