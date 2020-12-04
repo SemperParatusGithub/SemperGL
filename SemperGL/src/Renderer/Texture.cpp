@@ -7,7 +7,7 @@
 
 namespace SemperGL
 {
-    Texture::Texture(std::string filepath)
+    Texture::Texture(const std::string &filepath)
     {
 		stbi_set_flip_vertically_on_load(1);
 		m_LocalBuffer = stbi_load(filepath.c_str(), &m_Width, &m_Height, &m_BPP, 4);

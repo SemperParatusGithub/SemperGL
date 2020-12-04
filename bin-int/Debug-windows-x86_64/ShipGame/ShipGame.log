@@ -2,27 +2,4 @@
   Main.cpp
   Particles.cpp
   Player.cpp
-C:\Users\nilss\Desktop\SemperGL\Projects\ShipGame\src\Player.cpp(58,7): error C2039: "Renderer" ist kein Member von "SemperGL".
-C:\Users\nilss\Desktop\SemperGL\SemperGL\src\Util\Random.h(5): message : Siehe Deklaration von "SemperGL"
-C:\Users\nilss\Desktop\SemperGL\Projects\ShipGame\src\Player.cpp(58,7): error C3083: "Renderer": Das Symbol links neben "::" muss ein Typ sein.
-C:\Users\nilss\Desktop\SemperGL\Projects\ShipGame\src\Player.cpp(58,17): error C2039: "Draw" ist kein Member von "SemperGL".
-C:\Users\nilss\Desktop\SemperGL\SemperGL\src\Util\Random.h(5): message : Siehe Deklaration von "SemperGL"
-C:\Users\nilss\Desktop\SemperGL\Projects\ShipGame\src\Player.cpp(58,21): error C3861: "Draw": Bezeichner wurde nicht gefunden.
-C:\Users\nilss\Desktop\SemperGL\Projects\ShipGame\src\Level.cpp(61,8): error C2039: "Renderer" ist kein Member von "SemperGL".
-C:\Users\nilss\Desktop\SemperGL\SemperGL\src\Util\Random.h(5): message : Siehe Deklaration von "SemperGL"
-C:\Users\nilss\Desktop\SemperGL\Projects\ShipGame\src\Level.cpp(61,8): error C3083: "Renderer": Das Symbol links neben "::" muss ein Typ sein.
-C:\Users\nilss\Desktop\SemperGL\Projects\ShipGame\src\Level.cpp(61,18): error C2039: "Draw" ist kein Member von "SemperGL".
-C:\Users\nilss\Desktop\SemperGL\SemperGL\src\Util\Random.h(5): message : Siehe Deklaration von "SemperGL"
-C:\Users\nilss\Desktop\SemperGL\Projects\ShipGame\src\Level.cpp(61,22): error C3861: "Draw": Bezeichner wurde nicht gefunden.
-C:\Users\nilss\Desktop\SemperGL\Projects\ShipGame\src\Level.cpp(62,8): error C2039: "Renderer" ist kein Member von "SemperGL".
-C:\Users\nilss\Desktop\SemperGL\SemperGL\src\Util\Random.h(5): message : Siehe Deklaration von "SemperGL"
-C:\Users\nilss\Desktop\SemperGL\Projects\ShipGame\src\Level.cpp(62,8): error C3083: "Renderer": Das Symbol links neben "::" muss ein Typ sein.
-C:\Users\nilss\Desktop\SemperGL\Projects\ShipGame\src\Level.cpp(62,18): error C2039: "Draw" ist kein Member von "SemperGL".
-C:\Users\nilss\Desktop\SemperGL\SemperGL\src\Util\Random.h(5): message : Siehe Deklaration von "SemperGL"
-C:\Users\nilss\Desktop\SemperGL\Projects\ShipGame\src\Level.cpp(62,22): error C3861: "Draw": Bezeichner wurde nicht gefunden.
-C:\Users\nilss\Desktop\SemperGL\Projects\ShipGame\src\Particles.cpp(58,8): error C2039: "Renderer" ist kein Member von "SemperGL".
-C:\Users\nilss\Desktop\SemperGL\SemperGL\src\Util\Random.h(5): message : Siehe Deklaration von "SemperGL"
-C:\Users\nilss\Desktop\SemperGL\Projects\ShipGame\src\Particles.cpp(58,8): error C3083: "Renderer": Das Symbol links neben "::" muss ein Typ sein.
-C:\Users\nilss\Desktop\SemperGL\Projects\ShipGame\src\Particles.cpp(58,18): error C2039: "DrawRotatedQuad" ist kein Member von "SemperGL".
-C:\Users\nilss\Desktop\SemperGL\SemperGL\src\Util\Random.h(5): message : Siehe Deklaration von "SemperGL"
-C:\Users\nilss\Desktop\SemperGL\Projects\ShipGame\src\Particles.cpp(58,33): error C3861: "DrawRotatedQuad": Bezeichner wurde nicht gefunden.
+  ShipGame.vcxproj -> C:\Users\nilss\Desktop\SemperGL\Projects\ShipGame\..\..\bin\Debug-windows-x86_64\ShipGame\ShipGame.exe

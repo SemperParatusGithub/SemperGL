@@ -1,6 +1,4 @@
 #include <SemperGL/SemperGL.h>
-#define GLM_ENABLE_EXPERIMENTAL
-#include <glm/gtx/compatibility.hpp>
 #include <time.h>
 
 unsigned int xFields = 35;
@@ -13,18 +11,17 @@ unsigned int height = fieldSize * yFields;
 
 int main()
 {
-	if (!sgl::Core::Init())
-		return EXIT_FAILURE;
+	sgl::Core::Init()
 	std::srand(static_cast<unsigned int>(time(nullptr)));
 
 	enum State { MainMenu = 0, Playing, Dead, Close } GameState = State::MainMenu;
 	enum dir { w = 0, a, s, d } direction = dir::d;
 	bool showSettings = false;
 
-	sgl::Window window("Snake", width, height, sgl::WindowFlags_None);
-	window.SetInterval(1);
+	sgl::Window window("Snake", width, height);
+	window.SetVsync(true);
+	window.SetMinimumSize(1280, 720);
 
-	sgl::ImGuiInit(window);
 	ImGuiIO io = ImGui::GetIO();
 	ImFont *font = io.Fonts->AddFontFromFileTTF("res/fonts/OpenSans-Regular.ttf", 120.0f);
 	ImFont *font2 = io.Fonts->AddFontFromFileTTF("res/fonts/OpenSans-Regular.ttf", 32.0f);
@@ -97,25 +94,23 @@ int main()
 			glfwSetWindowSize(window.GetID(), width, height);
 			FruitPosition = { (std::rand() % (xFields - 1)) * (float)fieldSize, (std::rand() % (yFields - 1)) * (float)fieldSize };
 
-			sgl::Renderer::SetClearColor({ clearColor.r, clearColor.g, clearColor.b, clearColor.a });
 
-			sgl::Renderer::BeginScene(window);
+			sgl::Renderer2D::BeginScene(0.0f, 0.0f, window.GetWidth(), window.GetHeight());
 			/* Draw Background */
 			for (int y = 0; y < yFields; y++)
 			{
 				for (int x = 0; x < xFields; x++)
 				{
 					sgl::Vec4f color = { x / (float) xFields, 0.4f, y / (float) yFields, bgOpacity };
-					sgl::Renderer::DrawQuad({ x * fieldSize + (fieldSize / 2.f), y * fieldSize + (fieldSize / 2.f) }, { fieldSize - 0.1f * fieldSize, fieldSize - 0.1f * fieldSize }, color);
+					sgl::Renderer2D::DrawQuad({ x * fieldSize + (fieldSize / 2.f), y * fieldSize + (fieldSize / 2.f) }, { fieldSize - 0.1f * fieldSize, fieldSize - 0.1f * fieldSize }, color);
 				}
 			}
-			sgl::Renderer::EndScene();
+			sgl::Renderer2D::EndScene();
 		}
 		else if (GameState == Playing)
 		{
 			showSettings = false;
-			while (clock.GetTime().asMilliseconds<float>() < 100);
-			clock.Restart();
+			while (clock.Restart().asMilliseconds<float>() < 100);
 
 			/* Keyboard Input */
 			if (sgl::Input::IsKeyPressed(sgl::Key::W))
