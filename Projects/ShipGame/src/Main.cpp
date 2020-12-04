@@ -107,8 +107,8 @@ int main()
 		{
 			if (player.GetScore() > player.GetHighscore())
 				player.SetHighscore(player.GetScore());
-			player.Reset();
-			level.Reset();
+			player = Player();
+			level = Level();
 			respawnt = true;
 			GameState = MainMenu;
 		}

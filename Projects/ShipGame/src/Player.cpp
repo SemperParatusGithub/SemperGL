@@ -18,16 +18,6 @@ Player::Player() :
 	m_EngineSettings.endColor = { 0.9f, 0.4f, 0.0f, 1.0f };
 }
 
-void Player::Reset()
-{
-	m_Score = 0;
-	m_Body.SetPosition({ 600.0f, 400.0f });
-	m_Body.SetRotation(0);
-	m_VerticalVelocity = 0.0f;
-	m_HorizontalVelocity = 500.0f;
-	m_EngineParticles.Clear();
-}
-
 void Player::OnUpdate(sgl::Time deltaTime)
 {
 	// Update Particles

@@ -11,7 +11,6 @@ public:
 	Player();
 	~Player() = default;
 
-	void Reset();
 	void OnUpdate(sgl::Time deltaTime);
 	void OnRender();
 
