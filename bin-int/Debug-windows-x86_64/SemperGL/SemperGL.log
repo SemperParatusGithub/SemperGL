@@ -1,3 +1,0 @@
-﻿  Window.cpp
-C:\Users\nilss\Desktop\SemperGL\SemperGL\src\Core\Window\Window.cpp(34,4): warning C4002: Zu viele Argumente für den Aufruf des funktionsähnlichen Makros "assert".
-  SemperGL.vcxproj -> C:\Users\nilss\Desktop\SemperGL\SemperGL\..\bin\Debug-windows-x86_64\SemperGL\SemperGL.lib

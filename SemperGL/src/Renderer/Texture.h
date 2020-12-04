@@ -8,7 +8,7 @@ namespace SemperGL
 	class Texture
 	{
 	public:
-		Texture(std::string filepath);
+		Texture(const std::string &filepath);
 
 		void Bind(std::size_t slot) const;
 		void UnBind() const;

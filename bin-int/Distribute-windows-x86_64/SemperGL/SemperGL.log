@@ -1,4 +1,0 @@
-﻿  Core.cpp
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(130,1): warning C4005: "APIENTRY": Makro-Neudefinition
-C:\Users\nilss\Desktop\SemperGL\SemperGL\vendor\GLFW\include\GLFW\glfw3.h(123): message : Siehe vorherige Definition von "APIENTRY"
-  SemperGL.vcxproj -> C:\Users\nilss\Desktop\SemperGL\SemperGL\..\bin\Distribute-windows-x86_64\SemperGL\SemperGL.lib

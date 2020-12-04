@@ -1,2 +1,0 @@
-C:\Users\nilss\Desktop\SemperGL\SemperGL\vendor\Glad\bin\Debug-windows-x86_64\Glad\Glad.pdb
-C:\Users\nilss\Desktop\SemperGL\SemperGL\vendor\Glad\bin-int\Debug-windows-x86_64\Glad\Glad.pdb

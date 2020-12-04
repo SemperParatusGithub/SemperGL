@@ -1,4 +1,0 @@
-﻿  Main.cpp
-C:\Users\nilss\Desktop\SemperGL\SemperGL\src\Core\Core.h(55,27): warning C4101: "e": Unreferenzierte lokale Variable
-C:\Users\nilss\Desktop\SemperGL\SemperGL\src\Core\Core.h(63,4): warning C4996: '_sleep': This function or variable has been superceded by newer library or operating system functionality. Consider using Sleep instead. See online help for details.
-  SampleApp.vcxproj -> C:\Users\nilss\Desktop\SemperGL\Projects\SampleApp\..\..\bin\Distribute-windows-x86_64\SampleApp\SampleApp.exe
