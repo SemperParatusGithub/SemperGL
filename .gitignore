@@ -3,4 +3,4 @@
 ".user
 bin
 bin-int
-!vendor/bin/premake
+!/vendor/bin/premake/*
