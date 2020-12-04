@@ -32,7 +32,7 @@ void Player::OnUpdate(sgl::Time deltaTime)
 {
 	// Update Particles
 	m_EngineParticles.OnUpdate(deltaTime);
-	m_EngineSettings.emitter = { 560.0f, GetPosition().y };
+	m_EngineSettings.emitter = { GetPosition().x, GetPosition().y };
 	m_EngineSettings.speed = m_HorizontalVelocity / 200.0f;
 
 	if (sgl::Input::IsKeyPressed(sgl::Key::Space) || sgl::Input::IsMouseButtonPressed(sgl::Mouse::Button0))
@@ -55,7 +55,7 @@ void Player::OnUpdate(sgl::Time deltaTime)
 void Player::OnRender()
 {
 	m_EngineParticles.OnRender();
-	sgl::Renderer::Draw(m_Body);
+	sgl::Renderer2D::Draw(m_Body);
 }
 
 sgl::Vec2f Player::GetPosition() const
