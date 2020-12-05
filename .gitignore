@@ -1,7 +1,0 @@
-# Directories
-.vs/
-".user
-bin
-bin-int
-SemperGL.sln
-!/vendor/bin/premake/*
