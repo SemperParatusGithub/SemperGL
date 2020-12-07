@@ -6,7 +6,7 @@ int main()
 	sgl::Core::Init();
 
 	sgl::Window window("Window", 1280, 720);
-	window.SetVsync(true);
+	window.SetVsync(false);
 	sgl::Clock clock;
 
 	ImFont *openSansRegular = ImGui::GetIO().Fonts->AddFontFromFileTTF("res/fonts/OpenSans/OpenSans-Regular.ttf", 30.0f);
@@ -47,6 +47,17 @@ int main()
 		ImGui::PopFont();
 		ImGui::End();
 		ImGui::PopFont();
+
+		auto stats = sgl::Renderer2D::GetStats();
+		ImGui::Begin("Render Stats");
+		ImGui::Text("Framerate: %.2f FPS", ImGui::GetIO().Framerate);
+		ImGui::Text("Draw Calls: %d", stats.drawCalls);
+		ImGui::Text("Quads: %d", stats.quads);
+		ImGui::Text("Triangles: %d", stats.triangles);
+		ImGui::Text("Vertices: %d", stats.vertices);
+		ImGui::Text("Indices: %d", stats.indices);
+		ImGui::End();
+		sgl::Renderer2D::ResetStats();
 
 		settings.size = { size[0], size[1] };
 		settings.startColor = { startCol[0], startCol[1], startCol[2], startCol[3] };
