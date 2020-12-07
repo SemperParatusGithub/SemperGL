@@ -1,10 +1,12 @@
 # Directories
-.vs/
-".user
 bin
 bin-int
 SemperGL.sln
-!/vendor/bin/premake/*
-".vcxproj
-".vcxproj.user
-".ini
+!/vendor/bin/premake
+
+##  VS Files
+"*.vcxproj
+"*.vcxproj.user
+"*.ini
+*.vs/
+"*.user
