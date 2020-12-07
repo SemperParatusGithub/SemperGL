@@ -5,3 +5,6 @@ bin
 bin-int
 SemperGL.sln
 !/vendor/bin/premake/*
+".vcxproj
+".vcxproj.user
+".ini
